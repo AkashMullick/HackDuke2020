@@ -1,1 +1,1 @@
-# HackDuke2020_education
+# HackDuke2020
