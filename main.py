@@ -4,6 +4,7 @@ from google.cloud import vision
 from absl import app, flags
 from absl.flags import FLAGS
 import math
+import matplotlib.pyplot as plt
 
 import time
 import pandas as pd
@@ -14,7 +15,7 @@ client = vision.ImageAnnotatorClient()
 
 
 flags.DEFINE_string('video', '0', 'path to input video, set to 0 for webcam')
-flags.DEFINE_integer('capRate', 100, 'every amount of frames to send an API call')
+flags.DEFINE_integer('capRate', 1, 'every amount of frames to send an API call')
 flags.DEFINE_boolean('info', True, 'print info on detections')
 flags.DEFINE_boolean('output', True, 'write detections to CSV')
 flags.DEFINE_boolean('Display', True, 'Display individual frames (Debug)')
@@ -22,7 +23,7 @@ flags.DEFINE_boolean('Display', True, 'Display individual frames (Debug)')
 
 def main(_argv):
 
-   # cap = cv2.VideoCapture(FLAGS.video)
+    cap = cv2.VideoCapture(0)
 
     df = {
         'Roll':[],
@@ -43,9 +44,9 @@ def main(_argv):
     while True:
         
         #Get frame
-        #ret, frame = cap.read()
+        ret, frame = cap.read()
         ret = True
-        frame = cv2.imread("Student-Studying.jpeg")
+        #frame = cv2.imread("Student-Studying.jpeg")
 
         if not ret:
             print('Video has ended or failed')
@@ -90,7 +91,7 @@ def main(_argv):
             
 
             for face in faces:
-                if face.detection_confidence > 0.6:
+                if face.detection_confidence > 0.4:
                     df['Roll'].append(face.roll_angle)
                     df['Pitch'].append(face.tilt_angle)
                     df['Yaw'].append(face.pan_angle)
@@ -113,6 +114,8 @@ def main(_argv):
                     #Save CSV
                     if FLAGS.output:
                         dff = pd.DataFrame.from_dict(df)
+                        dff.plot(x = 'Time', y='Engagement', kind= 'scatter')
+                        
                         dff.to_csv('SavedResponse.csv')
 
                     #Print
@@ -134,6 +137,8 @@ def main(_argv):
         
         if cv2.waitKey(1) & 0xFF == ord('q'): break
         frameNum  += 1
+    plt.show()
+    
     
         
 
