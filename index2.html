@@ -12,14 +12,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
         <script src = "https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"> </script>
+        <link href="css-circular-prog-bar.css" rel="stylesheet">
+
     </head>
-    <body>
+    <body style = "font-family: Trebuchet MS;">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <div>
-            <h1>Hello Student,</h1>
+            <h1>Hello Student!</h1>
           </div>
           <div>
             <h2>Learning Goals for This Week</h2>
@@ -29,6 +31,31 @@
               <li>Goal 3</li>
             </ul>
           </div>
+
+          <div>
+              <h2>Engagement Streak for Today</h2>
+              <ul>
+                  <li>The first progress circle represents how engaged you were today</li>
+                  <li>The second progress circle represents how engaged you were this week</li>
+              </ul>
+          </div>
+
+          <div class="progress-circle p10">
+            <span>40%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+
+          <div class="progress-circle p10">
+            <span>12%</span>
+            <div class="left-half-clipper">
+              <div class="first50-bar"></div>
+              <div class="value-bar"></div>
+            </div>
+          </div>
+            
           <div id = "EngagementGraph">
             <h2>Engagement Graph</h2>
             <canvas id = "graph" width = "400" height = 400 ></canvas>
