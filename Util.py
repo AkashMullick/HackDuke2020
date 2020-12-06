@@ -17,8 +17,7 @@ speech_client = speech.SpeechClient()
 def record():
     p =pyaudio.PyAudio()
 
-    recordTime = ;
-7
+    recordTime = 7;
     stream = p.open(format=pyaudio.paInt16,
     channels=1,
     rate=16000,
@@ -75,5 +74,5 @@ def classify_text(text):
         print("Confidence: ", category.confidence)
 
 
-#record()
+record()
 stream_transcribe("TempAudio.wav")

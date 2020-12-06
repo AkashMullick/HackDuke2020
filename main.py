@@ -15,7 +15,7 @@ client = vision.ImageAnnotatorClient()
 
 
 flags.DEFINE_string('video', '0', 'path to input video, set to 0 for webcam')
-flags.DEFINE_integer('capRate', 1, 'every amount of frames to send an API call')
+flags.DEFINE_integer('capRate', 100, 'every amount of frames to send an API call')
 flags.DEFINE_boolean('info', True, 'print info on detections')
 flags.DEFINE_boolean('output', True, 'write detections to CSV')
 flags.DEFINE_boolean('Display', True, 'Display individual frames (Debug)')
@@ -114,7 +114,7 @@ def main(_argv):
                     #Save CSV
                     if FLAGS.output:
                         dff = pd.DataFrame.from_dict(df)
-                        dff.plot(x = 'Time', y='Engagement', kind= 'scatter')
+                        
                         
                         dff.to_csv('SavedResponse.csv')
 
@@ -135,8 +135,9 @@ def main(_argv):
                         response.error.message))
 
         
-        if cv2.waitKey(1) & 0xFF == ord('q'): break
+        if cv2.waitKey(100) & 0xFF == ord('q'): break
         frameNum  += 1
+    dff.plot(x = 'Time', y='Engagement', kind= 'scatter')
     plt.show()
     
     
