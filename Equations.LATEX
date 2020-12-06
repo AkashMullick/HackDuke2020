@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Keep-Focus Equations}
+\author{ammaarfirozi }
+
+\begin{document}
+
+\maketitle
+
+Yaw_{Score}= 1-min(1.0,  \mid \frac{\theta_{Yaw}-\frac{\theta_{Yaw}-Yaw_{0}}{2.0}}{\mid theta_{Yaw}\mid-Yaw_{0}} \mid)
+
+Pitch_{Score}= 1-min(1.0,  \mid \frac{\theta_{Pitch}-\frac{\theta_{Pitch}-Pitch_{0}}{2.0}}{\mid theta_{Pitch}\mid-Pitch_{0}} \mid)
+
+Joy_{Score}=\frac{Joy_{Likelyhood}}{5.0}
+
+Emotion_{Score}= 1-min(1.0, 
+\frac{\log{
+\frac{5*4-(\sum\nolimits) Expression_{Likelyhood}}{20.0}*135.5+0.75}}
+{100*log(1.0038)}
+
+Attention_{Score}=Yaw_{Score}*120+Pitch_{Score}*235+Joy_{Score}*275.3+Emotion_{Score}*55
+
+\end{document}
