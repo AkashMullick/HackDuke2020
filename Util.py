@@ -46,6 +46,8 @@ def record():
 def stream_transcribe(audio_path):
     with io.open(audio_path, "rb") as audio:
         content = audio.read()
+    textFile = open("transcribed.txt", "w")
+
     
     audio = speech.RecognitionAudio(content=content)
     config = speech.RecognitionConfig(
@@ -59,8 +61,11 @@ def stream_transcribe(audio_path):
     time = 0.0
     for result in response.results:
         print("Transcript: ", result.alternatives[0].transcript)
-        string = result.alternatives[0].transcript
-        classify_text(string)
+        stringT = result.alternatives[0].transcript
+        n = textFile.write(stringT)
+        textFile.close()
+
+        classify_text(stringT)
 
 
 def classify_text(text):
