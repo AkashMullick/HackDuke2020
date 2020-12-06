@@ -1,4 +1,4 @@
-from PIL import, Image, ImageDraw, Image, ImageFont
+from PIL import Image, ImageDraw, Image, ImageFont
 
 
 #Draw bounding box around face
