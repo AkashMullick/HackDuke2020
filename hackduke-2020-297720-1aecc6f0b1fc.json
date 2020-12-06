@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hackduke-2020-297720",
+  "private_key_id": "1aecc6f0b1fcb1dff85f92477e008792e20786fd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCOl+hBokly/LA8\n/AzrEgbcdXwkMu63nISDK0EhYyMVk2Ca5JGrkLM6XbCKt+uB6GNxyJ4phy5U4BPV\no10/zdR+9z355EKEAf8BWIPuLcQeeTgeGURSPnHvi7GKZkSUUiVO8WzTraZ21ghV\nPAg0EwSKf/G9S2ANOjr5HjKe2XgolBnVwhArbXCkZF1/qAk71wV5Y7+6EIu/u+gw\n70tRYxP+v232dBu3ATMsDlORgQ4O0Y17LaiyKalbefY6mCkIO6hGBM/aSsai8KuV\nEqrfzVzEsHK/+IZMh2OLuhsNlqP0ZImbv4sKqq8p+h9JVJ2ioEu065dbjgbRpAzu\nGZPnwp+DAgMBAAECggEAIzVS/dHKfP/zrDs4HVroIstHidChrOiSt6iYflvyL8Oi\nGNzTMx+ZgZHco4PiPMNaup+knfBo+kAR5bBeuABktazquqcn3Vx40KZAfTEDudqI\nhrYKbpxImbNOdTPnPxBBcgqeqm24KqOSjykxhVokxuXslKbl4p48LYLNUPe1eZ8p\nlSefNpVnwmznUq1sirPS4+a4nPDqyHcAfR70D1530+CnR2uujq5lR6E8Uix91zDl\nQoJweiwIdmHe+1ymG1xwmDbzaXD+JBMw5Hp5v3JHChx+V+/kvBquDJxYBS6C6VaO\nNoP57cbvK4T6ktpUFzoR6Pyo5lZdvHbySXALBpuaIQKBgQDEzIcUvjvu5+QDGZkO\nv18bG0V7eSjng2robMQ9IIBQn2oXJ+SMySDuVIz6Dv/SAWVbOH8YVfT+WlwC7Dm2\nb0T/yMwBHGWcMG8BCrGN1cFHSuk3vKK35GEgVfQgaJ8j2mW4tZ+8cnEqZ968zH0j\nKhLTO792mUWoYh5m/Fs2HFcZ2wKBgQC5fQObLJMUU9tq05WuxPtSwK7qv8HmNwkx\nUA7QVFiSa3GjgFTNkiLnUDQ+Vx0HuYh5tpWVkjURu7F/jBKtkxHejT0uCRjnaqub\nCsjrxt/4TCEEldM3jAHHcfptqeTtGqL4z9Ci72k/nhEJdIGPhMNeCYFmWfH9gkYa\nX7AOx2xleQKBgBZp1Nif8eN7tZREzhHH6eUEbh1p5ya26O4ftRnhIbwM6+BHQthl\n78I1DvlLzAb28bw56v+yinyNff03Ojt04L7g95sIyOnI+lt8BEzLE4AzH+yhJ0ca\nU5WDNJKcV8OVlBA9XzvvLMRPoCaQg5AFsq8sFtpDCpPq2NuR0jGPeLwRAoGAWZtX\nHqON+gf4u8azTNbEQtnqpmU0mq6DtlrijSnyD+nv3/ii/xxV2EEau/MBhzXOBF58\nLOGQ2Zw+x0s3yrp9q3G32IF0kncpp6CyJ5TPpffBC6IFg5QTV/Jr9IZanWB80o4y\nUEQwKBeIS3UJEfglGUymQne5O6qvixYmyzzz1KECgYEAr7VJ9HMcF7wexIuIZJhx\nIq7I6ubqcy088QKPQU7/Mgj+VWRysXysfw7SQTNeb7ubHevou4gB3czu0dDKgfoV\nbx0pzWhkYAHmDu5aAPo9Bwuz2upW6cGwcwAFN40+TFNjYZZ45gi1p8ajCtY5BQqc\nnrlItBhcxk+lxe5owfd45mA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloudvision@hackduke-2020-297720.iam.gserviceaccount.com",
+  "client_id": "118325310561259317557",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloudvision%40hackduke-2020-297720.iam.gserviceaccount.com"
+}
